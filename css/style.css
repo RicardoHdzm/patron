@@ -18,7 +18,7 @@ div{
 
 
 .navbar{
-	background-color: #088434;
+	background-color: #107c34;
 	font-size: small;
 	z-index: 3;
 	font-weight: bold;
@@ -179,7 +179,7 @@ video {
 .g-patron{
 	height: fit-content;
 	color: #fff;
-	background-color: #088434;
+	background-color: #107c34;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='2000' height='2000' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.05'%3E%3Cpolygon fill='%23000' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23000' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E");
 	background-position: center;
 }
@@ -208,7 +208,7 @@ video {
 	text-align: center;
 	height: fit-content;
 	color: #fff;
-	background-color: #088434;
+	background-color: #107c34;
 	background-image: url("../img/backgrounds/bg2.png");
 	background-position: center;
 	background-size: cover;
