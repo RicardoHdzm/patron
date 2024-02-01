@@ -208,6 +208,13 @@ video {
 	background-attachment: fixed;
 }
 
+.nosotros{
+	height: 100vh;
+	background-image: url("../img/banners/nosotros.jpeg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
 .map-container{
 	overflow:hidden;
 	position:relative;
