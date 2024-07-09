@@ -249,16 +249,23 @@ video {
 	font-weight: bold;
 }
 
-.almacen{
+.sucursales{
 	height: 100vh;
 	background-image: url("../assets/banners/almacen.jpeg");
 	background-position: top;
 	background-size: cover;
 }
 
+.productos{
+	height: 100vh;
+	background-image: url("../assets/banners/productos.jpg");
+	background-position: top;
+	background-size: cover;
+}
+
 .nosotros{
 	height: 100vh;
-	background-image: url("../assets/banners/nosotros.jpeg");
+	background-image: url("../assets/banners/nosotros.jpg");
 	background-size: cover;
 }
 
