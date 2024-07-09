@@ -512,6 +512,11 @@ img{
 	background: #f8bc2c;
 }
 
-.brandx{
+.marca{
 	width: 75%;
+	transition: .5s;
+}
+
+.marca:hover{
+	transform: translateY(-5px);
 }
