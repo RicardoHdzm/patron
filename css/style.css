@@ -25,6 +25,10 @@ div{
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
 }
 
+.nav-item{
+	width: 100%!important;
+}
+
 .nav-link{
 	color: #fff !important;
 	margin-top: 10px;
@@ -34,8 +38,7 @@ div{
 
 .nav-link:hover{
 	color: #f8bc2c!important;
-	transform: scale(1.05);
-}
+ }
 
 .nav-link.active {
 	font-weight: bolder;
@@ -169,7 +172,7 @@ video {
 .home{
 	height: 100vh;
 	text-align: center;
-	background-image: url("../img/banners/home-banner.jpeg");
+	background-image: url("../assets/banners/home-banner.jpeg");
 	background-position: center;
 }
 
@@ -196,23 +199,67 @@ video {
 	font-size: small;
 }
 
+.centros{
+	background-color: rgba(0, 0, 0, .3);
+	margin: 5px!important;
+}
+
+.servicios{
+	background-color: rgba(0, 0, 0, .3);
+	margin: 5px!important;
+
+}
+
+.servicios h2{
+	font-size: medium;
+}
+
 .space{
 	height: 3rem;
 }
 
+.card{
+	background-color: rgba(0, 0, 0, .2);
+	border: none;
+	width: 100%;
+	height: fit-content;
+	padding: 20px!important;
+	text-align: center;
+	transition: .5s;
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+.card-img-top{
+		padding: 15px;
+}
+
+.card-text{
+	color: #f8bc2c;
+	font-size: large;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.card-subtext{
+	color: #f2f2f2;
+	font-size: medium;
+	font-weight: bold;
+}
+
 .almacen{
 	height: 100vh;
-	background-image: url("../img/banners/almacen.jpeg");
+	background-image: url("../assets/banners/almacen.jpeg");
 	background-position: top;
 	background-size: cover;
-	background-attachment: fixed;
 }
 
 .nosotros{
 	height: 100vh;
-	background-image: url("../img/banners/nosotros.jpeg");
+	background-image: url("../assets/banners/nosotros.jpeg");
 	background-size: cover;
-	background-attachment: fixed;
 }
 
 .map-container{
@@ -243,14 +290,14 @@ video {
 	height: fit-content;
 	color: #fff;
 	background-color: #107c34;
-	background-image: url("../img/backgrounds/bg2.png");
+	background-image: url("../assets/backgrounds/bg2.png");
 	background-position: center;
 	background-size: cover;
 
 }
 
 .footer p{
-	font-size: small;
+	font-size: medium;
 	letter-spacing: 2px;
 }
 
@@ -291,7 +338,7 @@ img{
 
 
 .social-icon{
-	font-size: large;
+	font-size: xx-large;
 	color: #fff;
 	transition: .2s;
 	padding-right: 20px;
@@ -366,7 +413,7 @@ img{
 }
 
 #wappBtn:hover {
-	transform: scale(1.1);
+	transform: translateY(-10px);
 	background-color: #f8bc2c;
 }
 
@@ -456,4 +503,8 @@ img{
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #f8bc2c;
+}
+
+.brandx{
+	width: 350px;
 }
