@@ -1,7 +1,7 @@
 body{
 	font-family: "Roboto", sans-serif;
 	color: #000;
-	background-color: #fff;
+	background-color: #000;
 	height: 100%;
 	padding-top: 50px!important;
 	scroll-behavior: smooth;
@@ -244,7 +244,7 @@ video {
 }
 
 .card-subtext{
-	color: #f2f2f2;
+	color: #fff;
 	font-size: medium;
 	font-weight: bold;
 }
@@ -256,17 +256,24 @@ video {
 	background-size: cover;
 }
 
+.servicio{
+	height: 100vh;
+	background-image: url("../assets/banners/servicios.jpeg");
+	background-position: center;
+	background-size: cover;
+}
+
 .productos{
 	height: 100vh;
 	background-image: url("../assets/banners/productos.jpg");
-	background-position: top;
+	background-position: center;
 	background-size: cover;
 }
 
 .nosotros{
 	height: 100vh;
 	background-image: url("../assets/banners/nosotros.jpg");
-	background-size: cover;
+	background-size: center;
 }
 
 .map-container{
