@@ -116,7 +116,7 @@ hr{
 }
 
 p{
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 }
 
 span{
@@ -399,24 +399,6 @@ img{
 	outline: 0;
 }
 
-.up{
-	transition: .5s;
-}
-
-.up:hover{
-	transform: scale(1.2);
-}
-
-
-.icon-wap{
-	font-size: 1em;
-}
-
-.iconx{
-	font-size: xx-large;
-	color: #f8bc2c;
-}
-
 .social-icon:hover{
 	color: #f8bc2c;
 }
@@ -474,7 +456,7 @@ img{
 @media only screen and (max-width: 1024px){
 
 	h1, h2{
-		font-size: 2.5rem;
+		font-size: 3rem;
 	}
 
 
@@ -484,7 +466,7 @@ img{
 
 
 	p{
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.logo{
@@ -493,24 +475,12 @@ img{
 	}
 
 
-	.sponsors{
-		width: 80%;
-	}
-
-	.sponsors2{
-		width: 80%;
-	}
-
 	.btn{
-		font-size: 1rem;
+		font-size: 1.2rem;
 	}
 
 	.footer-logo{
 		height: 75px;
-	}
-
-	.iconx{
-		font-size: x-large;
 	}
 
 	.s-patron{
