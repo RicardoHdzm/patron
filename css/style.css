@@ -14,6 +14,10 @@ div{
 	padding: 0!important;
 }
 
+div {
+	scroll-margin-top: 115px; /* Ajuste de desplazamiento para el navbar */
+}
+
 /* NAV */
 
 
@@ -37,15 +41,10 @@ div{
 	transition: .2s;
 }
 
-.nav-link:hover{
+.nav-link:hover, .nav-link:focus{
 	color: #f8bc2c;
 }
 
-.nav-link.active {
-	font-weight: bolder;
-	transform: scale(1.2);
-	color: #f8bc2c
-}
 
 .navbar-toggler { 
 	margin: 0 auto;
@@ -110,8 +109,7 @@ hr{
 	border: 2px solid #f8bc2c;
 	text-align: center;
 	opacity: 1;
-	width: 50px;
-	margin-bottom: 25px;
+	width: 10rem;
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -130,11 +128,6 @@ span{
 	color:  #000;
 	background: #f8bc2c;
 }
-
-.wapp{
-	width: 3.5em;
-}
-
 
 .center{
 	text-align: center!important;
@@ -218,6 +211,7 @@ video {
 	background-color: rgba(0, 0, 0, .3);
 	margin: .5rem!important;
 	border-radius: .25rem;
+	border-color: transparent;
 }
 
 .servicios{
@@ -232,6 +226,7 @@ video {
 
 .servicios h3{
 	font-size: 1.8rem;
+	margin: 0px;
 }
 
 .space{
@@ -314,14 +309,12 @@ video {
 }
 
 .mini-map{
-	border-radius: 5px;
-	border: solid;
-	border-width: thin;
-	border-color: #f8bc2c;
+	border-radius: .25rem;
+	border: solid thin transparent;
+	height: 20rem;
 }
 
 .footer{
-	font-size: 1rem;
 	text-align: center;
 	height: fit-content;
 	color: #fff;
@@ -330,6 +323,10 @@ video {
 	background-position: center;
 	background-size: cover;
 
+}
+
+.footer p{
+	font-size: 1rem;
 }
 
 
@@ -349,9 +346,7 @@ img{
 }
 
 .logo{
-	height: 300px;
-	transition: .5s;
-	margin: 15px!important;
+	height: 25rem;
 	filter: brightness(0) invert(1);
 	z-index: 1;
 }
@@ -370,7 +365,7 @@ img{
 
 
 .social-icon{
-	font-size: xx-large;
+	font-size: 2.5rem;
 	color: #fff;
 	transition: .2s;
 	padding-right: 20px;
@@ -382,13 +377,13 @@ img{
 
 .btn{
 	background-color: #f8bc2c;
-	font-size: medium;
+	font-size: 1.2rem;
 	font-weight: bold;
 	border: solid;
 	border-width: thin;
 	border-color: #f8bc2c;
 	border-radius: .25rem;
-	padding: 20px;
+	padding: 1.5rem;
 	transition: .2s;
 	width: 250px;
 	color: #fff!important;
@@ -428,8 +423,8 @@ img{
 
 #wappBtn {
 	position: fixed;
-	bottom: 50px;
-	right: 35px;
+	bottom: 2rem;
+	right: 2rem;
 	z-index: 90;
 	outline: none; 
 	background-color: #107c34;
@@ -441,13 +436,18 @@ img{
 	transition: 0.5s;
 	border-radius: 100%;
 	padding: 5px!important;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	filter: drop-shadow(0 0 0.25rem #000);
 }
 
 #wappBtn:hover {
-	transform: translateY(-10px);
+	transform: translateY(-.5rem);
 	background-color: #f8bc2c;
 }
+
+.wapp{
+	width: 5rem;
+}
+
 
 /* SCREEN */
 
