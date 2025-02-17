@@ -19,31 +19,32 @@ div{
 
 .navbar{
 	background-color: #107c34;
-	font-size: small;
+	font-size: 1rem;
 	z-index: 3;
 	font-weight: bold;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.05);
+	filter: drop-shadow(0 0 0.25rem #000);
+
 }
 
 .nav-item{
-	width: 100%!important;
+	width: 100%;
 }
 
 .nav-link{
-	color: #fff !important;
+	color: #fff;
 	margin-top: 10px;
 	font-weight: bold;
 	transition: .2s;
 }
 
 .nav-link:hover{
-	color: #f8bc2c!important;
- }
+	color: #f8bc2c;
+}
 
 .nav-link.active {
 	font-weight: bolder;
 	transform: scale(1.2);
-	color: #f8bc2c!important;
+	color: #f8bc2c
 }
 
 .navbar-toggler { 
@@ -61,12 +62,12 @@ div{
 
 
 .custom-toggler:focus, .custom-toggler:active, .custom-toggler:hover{
-	box-shadow: none!important;
+	box-shadow: none;
 	outline: 0;
 }
 
 .logo-nav{
-	height: 75px;
+	height: 5rem;
 }
 
 .logo-sm-nav{
@@ -84,14 +85,9 @@ div{
 }
 
 
-
-.logo-nav-small{
-	width: 100px;
-}
-
 /* TEXT */
 
-h1{
+h1, h2{
 	font-size: 3.5em;
 	font-weight: bolder;
 	color: #f8bc2c;
@@ -100,15 +96,13 @@ h1{
 	letter-spacing: 0px;
 }
 
-h2{
-	font-size: x-large;
-	font-weight: bold;
-	text-transform: uppercase;
-}
 
 h3{
-	font-size: small;
-	line-height: 2;
+	font-size: 2.25rem;
+	font-weight: bold;
+	color: #f8bc2c;
+	text-transform: uppercase;
+	letter-spacing: 0px;
 }
 
 hr{
@@ -118,10 +112,13 @@ hr{
 	opacity: 1;
 	width: 50px;
 	margin-bottom: 25px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }
 
 p{
-	font-size: medium;
+	font-size: 1.2rem;
 }
 
 span{
@@ -191,27 +188,50 @@ video {
 	background-position: center;
 }
 
+.c-patron{
+	height: fit-content;
+	color: #fff;
+	background-color: #107c34;
+	background-image: url("../assets/banners/contacto.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.c-patron h2{
+	color: #fff;
+}
+
+
+.c-patron hr{
+	border-color: #fff;
+}
+
 .g-patron a{
 	color: #f8bc2c;
 }
 
 .centros p{
-	font-size: small;
+	font-size: 1rem;
 }
 
 .centros{
 	background-color: rgba(0, 0, 0, .3);
-	margin: 5px!important;
+	margin: .5rem!important;
+	border-radius: .25rem;
 }
 
 .servicios{
 	background-color: rgba(0, 0, 0, .3);
-	margin: 5px!important;
+	margin: .5rem!important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: .25rem;
 
 }
 
-.servicios h2{
-	font-size: medium;
+.servicios h3{
+	font-size: 1.8rem;
 }
 
 .space{
@@ -220,12 +240,14 @@ video {
 
 .card{
 	background-color: rgba(0, 0, 0, .2);
-	border: none;
+	border-color: transparent;
+	border-radius: .25rem;
 	width: 100%;
 	height: fit-content;
-	padding: 20px!important;
+	padding: 2rem!important;
 	text-align: center;
 	transition: .5s;
+
 }
 
 .card:hover{
@@ -233,47 +255,47 @@ video {
 }
 
 .card-img-top{
-		padding: 15px;
+	padding: 2rempx;
 }
 
 .card-text{
 	color: #f8bc2c;
-	font-size: large;
+	font-size: 1.2rem;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .card-subtext{
 	color: #fff;
-	font-size: medium;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
-.sucursales{
+.sucursales, .servicio, .productos, .nosotros{
 	height: 100vh;
-	background-image: url("../assets/banners/almacen.jpeg");
-	background-position: top;
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.sucursales{
+	background-image: url("../assets/banners/sucursales.png");
 }
 
 .servicio{
-	height: 100vh;
-	background-image: url("../assets/banners/servicios.jpeg");
-	background-position: center;
-	background-size: cover;
+	background-image: url("../assets/banners/servicios.png");
+
 }
 
-.productos{
-	height: 100vh;
-	background-image: url("../assets/banners/productos.jpg");
-	background-position: center;
-	background-size: cover;
+.productos{	background-image: url("../assets/banners/productos.png");
+}
+
+#productos h3{
+	color: #fff;
 }
 
 .nosotros{
-	height: 100vh;
-	background-image: url("../assets/banners/nosotros.jpg");
-	background-size: center;
+	background-image: url("../assets/banners/nosotros.png");
 }
 
 .map-container{
@@ -299,7 +321,7 @@ video {
 }
 
 .footer{
-	font-size: small;
+	font-size: 1rem;
 	text-align: center;
 	height: fit-content;
 	color: #fff;
@@ -310,14 +332,10 @@ video {
 
 }
 
-.footer p{
-	font-size: medium;
-	letter-spacing: 2px;
-}
 
-.cp{
-	font-size: xx-small!important;
-	color: #fff!important;
+.copy{
+	font-size: .5rem!important;
+	color: #fff;
 }
 
 /* IMG */
@@ -369,7 +387,7 @@ img{
 	border: solid;
 	border-width: thin;
 	border-color: #f8bc2c;
-	border-radius: 0px;
+	border-radius: .25rem;
 	padding: 20px;
 	transition: .2s;
 	width: 250px;
@@ -433,7 +451,7 @@ img{
 
 /* SCREEN */
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1400px){
 
 	.logo-sm-nav{
 		display: inline;
@@ -451,21 +469,22 @@ img{
 		width: 90%;
 		height: auto;
 	}
+}
 
-	h1{
-		font-size: xx-large;
+@media only screen and (max-width: 1024px){
+
+	h1, h2{
+		font-size: 2.5rem;
 	}
 
-	h2{
-		font-size: x-large;
+
+	h3{
+		font-size: 2rem;
 	}
+
 
 	p{
-		font-size: small;
-	}
-
-	.cardx{
-		width: 100%;
+		font-size: 1rem;
 	}
 
 	.logo{
@@ -483,7 +502,7 @@ img{
 	}
 
 	.btn{
-		font-size: small;
+		font-size: 1rem;
 	}
 
 	.footer-logo{
