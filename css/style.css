@@ -1,7 +1,7 @@
 body{
 	font-family: "Roboto", sans-serif;
 	color: #000;
-	background-color: #000;
+	background-color: #107c34;
 	height: 100%;
 	padding-top: 50px!important;
 	scroll-behavior: smooth;
@@ -87,7 +87,7 @@ div {
 /* TEXT */
 
 h1, h2{
-	font-size: 3.5em;
+	font-size: 3.5rem;
 	font-weight: bolder;
 	color: #f8bc2c;
 	text-align: center;
@@ -116,7 +116,7 @@ hr{
 }
 
 p{
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 span{
@@ -242,7 +242,6 @@ video {
 	padding: 2rem!important;
 	text-align: center;
 	transition: .5s;
-
 }
 
 .card:hover{
@@ -515,4 +514,22 @@ img{
 
 .marca:hover{
 	transform: translateY(-5px);
+}
+
+.owl-nav button {
+	font-size: 1.5rem!important;
+	padding: 1rem!important;
+	margin-left: 2rem!important;
+	margin-right: 2rem!important;
+
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #f8bc2c!important;
+}
+
+.owl-nav button:hover {
+	background-color: rgba(0, 0, 0, 0.8);
 }
