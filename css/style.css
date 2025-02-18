@@ -267,21 +267,26 @@ video {
 
 .sucursales, .servicio, .productos, .nosotros{
 	height: 100vh;
-	background-size: cover;
-	background-position: center;
 	background-attachment: fixed;
 }
 
 .sucursales{
 	background-image: url("../assets/banners/sucursales.png");
+	background-position: center;
+
 }
 
 .servicio{
 	background-image: url("../assets/banners/servicios.png");
+	background-position: 25%;
 
 }
 
-.productos{	background-image: url("../assets/banners/productos.png");
+.productos{	
+	background-image: url("../assets/banners/productos.png");
+	background-position: center;
+	background-size: cover;
+
 }
 
 #productos h3{
@@ -290,6 +295,8 @@ video {
 
 .nosotros{
 	background-image: url("../assets/banners/nosotros.png");
+	background-position: center;
+
 }
 
 .map-container{
