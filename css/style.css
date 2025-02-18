@@ -260,17 +260,17 @@ video {
 }
 
 .home {
-  width: 100vw;
-  background-color: #fff;
+	width: 100vw;
+	background-color: #fff;
 }
 
 .img-menu {
-  width: 100%!important;
+	width: 100%!important;
 }
 
 
 .banner {
-  height: fit-content;
+	height: fit-content;
 }
 
 #productos h3{
@@ -445,8 +445,12 @@ img{
 
 @media only screen and (max-width: 1024px){
 
-	h1, h2{
+	h1{
 		font-size: 3rem;
+	}
+
+	h2{
+		font-size: 2.5rem;
 	}
 
 
@@ -454,6 +458,11 @@ img{
 		font-size: 2rem;
 	}
 
+
+	.servicios h3{
+		font-size: 1.2rem;
+		margin: 0px;
+	}
 
 	p{
 		font-size: 1.2rem;
