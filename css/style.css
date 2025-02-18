@@ -159,12 +159,6 @@ video {
 	pointer-events: none;
 }
 
-.home{
-	height: 100vh;
-	text-align: center;
-	background-image: url("../assets/banners/home-banner.jpeg");
-	background-position: center;
-}
 
 .s-patron{
 	height: fit-content;
@@ -269,6 +263,11 @@ video {
   width: 100vw;
   background-color: #fff;
 }
+
+.img-menu {
+  width: 100%!important;
+}
+
 
 .banner {
   height: fit-content;
