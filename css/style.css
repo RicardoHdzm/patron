@@ -265,28 +265,13 @@ video {
 	font-weight: bold;
 }
 
-.sucursales, .servicio, .productos, .nosotros{
-	height: 100vh;
-	background-attachment: fixed;
+.home {
+  width: 100vw;
+  background-color: #fff;
 }
 
-.sucursales{
-	background-image: url("../assets/banners/sucursales.png");
-	background-position: center;
-
-}
-
-.servicio{
-	background-image: url("../assets/banners/servicios.png");
-	background-position: 25%;
-
-}
-
-.productos{	
-	background-image: url("../assets/banners/productos.png");
-	background-position: center;
-	background-size: cover;
-
+.banner {
+  height: fit-content;
 }
 
 #productos h3{
