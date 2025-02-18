@@ -66,12 +66,12 @@ div {
 }
 
 .logo-nav{
-	height: 5rem;
+	height: 5.5rem;
 }
 
 .logo-sm-nav{
 	display: none;
-	width: 150px;
+	height: 5rem;
 }
 
 
@@ -342,7 +342,7 @@ img{
 }
 
 .logo-f{
-	height: 75px;
+	height: 5rem;
 }
 
 .brand-gallery-w{
@@ -417,7 +417,7 @@ img{
 }
 
 .wapp{
-	width: 5rem;
+	width: 4rem;
 }
 
 
@@ -476,10 +476,6 @@ img{
 
 	.btn{
 		font-size: 1.2rem;
-	}
-
-	.footer-logo{
-		height: 75px;
 	}
 
 	.s-patron{
