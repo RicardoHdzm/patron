@@ -179,7 +179,7 @@ video {
 	height: fit-content;
 	color: #fff;
 	background-color: #107c34;
-	background-image: url("../assets/banners/contacto.jpg");
+	background-image: url("../assets/banners/contacto.png");
 	background-position: center;
 	background-size: cover;
 }
@@ -508,7 +508,7 @@ img{
 }
 
 .marca{
-	width: 75%;
+	width: 18rem;
 	transition: .5s;
 }
 
