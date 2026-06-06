@@ -117,7 +117,7 @@ hr{
 }
 
 p{
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 }
 
 span{
@@ -442,16 +442,13 @@ img{
 		width: 90%;
 		height: auto;
 	}
-}
-
-@media only screen and (max-width: 1024px){
 
 	h1{
-		font-size: 3rem;
+		font-size: 2rem;
 	}
 
 	h2{
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 
 
@@ -466,18 +463,30 @@ img{
 	}
 
 	p{
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
+
+	.card-text{
+		font-size: .9rem;
+	}
+
+	.card-subtext{
+		font-size: .8rem;
+	}
+
+
+	.btn{
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 1024px){
 
 	.logo{
 		width: 80%;
 		height: auto;
 	}
 
-
-	.btn{
-		font-size: 1.2rem;
-	}
 
 	.s-patron{
 		text-align: justify-all!important;
