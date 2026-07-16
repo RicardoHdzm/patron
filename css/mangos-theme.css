@@ -1,0 +1,39 @@
+/* Mangos Patrón — tema azul (hereda la base de css/style.css) */
+
+:root{
+	--navy: #001b3d;
+	--navy-dark: #00142e;
+	--navy-darker: #000c1c;
+}
+
+.hero{
+	background: var(--navy);
+}
+
+.hero::before{
+	background: linear-gradient(180deg, rgba(0,12,28,.55) 0%, rgba(0,12,28,.4) 40%, var(--navy) 88%, var(--navy) 100%);
+}
+
+/* Fondo plano, sin el resplandor decorativo, para que el empalme con el
+   hero quede sin ninguna diferencia de textura */
+.section-navy{
+	background-image: none;
+}
+
+/* Secciones "claras" usan un gris muy claro en vez de blanco puro */
+.section-light{
+	background: #f5f5f5;
+}
+
+/* Cifras de la franja de datos: número en amarillo, etiqueta en blanco */
+.section-navy .stats-grid .stat-block-value{
+	color: var(--gold);
+}
+
+.section-navy .stats-grid .stat-block-label{
+	color: #fff;
+}
+
+.section-navy .stats-grid{
+	border-top-color: rgba(255, 255, 255, .15);
+}

@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 	initNav();
+	initNavScroll();
 	initScrollReveal();
 	initProductTabs();
 	initScrollRestore();
@@ -34,6 +35,23 @@ function initNav() {
 			toggle.setAttribute("aria-expanded", "false");
 		});
 	});
+}
+
+// Transparent navbar over the hero/banner, solid once scrolled (or mobile menu open)
+function initNavScroll() {
+	var nav = document.querySelector(".navbar");
+	var links = document.querySelector(".nav-links");
+	var toggle = document.querySelector(".nav-toggle");
+	if (!nav) return;
+
+	function update() {
+		var menuOpen = links && links.classList.contains("is-open");
+		nav.classList.toggle("scrolled", window.scrollY > 40 || !!menuOpen);
+	}
+
+	window.addEventListener("scroll", update, { passive: true });
+	if (toggle) toggle.addEventListener("click", update);
+	update();
 }
 
 // Fade-up on scroll (replaces AOS)
@@ -97,8 +115,18 @@ function initCounters() {
 	var items = document.querySelectorAll("[data-count-to]");
 	if (!items.length) return;
 
-	function format(value, suffix) {
-		return value.toLocaleString("es-MX") + suffix;
+	function render(el, value, suffix) {
+		var formatted = value.toLocaleString("es-MX");
+		el.textContent = "";
+		if (suffix.charAt(suffix.length - 1) === "+") {
+			el.appendChild(document.createTextNode(formatted + suffix.slice(0, -1)));
+			var plusEl = document.createElement("span");
+			plusEl.className = "stat-suffix-plus";
+			plusEl.textContent = "+";
+			el.appendChild(plusEl);
+		} else {
+			el.appendChild(document.createTextNode(formatted + suffix));
+		}
 	}
 
 	function animate(el) {
@@ -111,7 +139,7 @@ function initCounters() {
 			if (start === null) start = timestamp;
 			var progress = Math.min((timestamp - start) / duration, 1);
 			var eased = 1 - Math.pow(1 - progress, 3);
-			el.textContent = format(Math.round(target * eased), suffix);
+			render(el, Math.round(target * eased), suffix);
 			if (progress < 1) {
 				window.requestAnimationFrame(step);
 			}
@@ -122,7 +150,7 @@ function initCounters() {
 
 	if (!("IntersectionObserver" in window)) {
 		items.forEach(function (el) {
-			el.textContent = format(parseInt(el.dataset.countTo, 10), el.dataset.suffix || "");
+			render(el, parseInt(el.dataset.countTo, 10), el.dataset.suffix || "");
 		});
 		return;
 	}
