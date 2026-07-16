@@ -11,228 +11,218 @@
 	<meta property="og:description" content="Encuentra la sucursal de Grupo Patrón más cercana en México. Brindamos soluciones en almacenamiento y comercialización de granos.">
 	<meta property="og:type" content="article">
 	<meta property="og:image" content="https://www.grupopatron.com.mx/assets/logos/meta.png">
-	<meta property=”og:url” content=”https://www.grupopatron.com.mx/sucursales”>
+	<meta property="og:url" content="https://www.grupopatron.com.mx/sucursales">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Grupo Patrón - Sucursales</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-	<script src="https://kit.fontawesome.com/7e18ad7e04.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-	<script src="js/script.js"></script>
 	<link rel="icon" href="assets/logos/favicon.png">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-	<nav id="Navbar" class="navbar navbar-expand-xxl fixed-top justify-content-between px-5">
-		<a class="navbar-brand"href="index"><img src="assets/logos/logo.png" class="logo-sm-nav"></a>
-		<button class="navbar-toggler ml-auto custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
+	<nav class="navbar">
+		<a class="brand" href="index"><img src="assets/logos/logo.png" alt="Grupo Patrón"></a>
+		<button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+			<span></span><span></span><span></span>
 		</button>
-		<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-			<ul class="navbar-nav mt-lg-0">
-				<li class="nav-item px-5 py-3 my-auto">
-					<a class="nav-link" href="nosotros">NOSOTROS</a>
-				</li>
-				<li class="nav-item px-5 py-3 my-auto">
-					<a class="nav-link" href="servicios">SERVICIOS</a>
-				</li>
-				<li class="nav-item px-5 py-3 hide">
-					<a class="navbar-brand px-5" href="index"><img src="assets/logos/logo.png" class="logo-nav"></a>
-				</li>
-				<li class="nav-item px-5 py-3 my-auto">
-					<a class="nav-link" href="#">SUCURSALES</a>
-				</li>
-				<li class="nav-item px-5 py-3 my-auto">
-					<a class="nav-link" href="productos">PRODUCTOS</a>
-				</li>
-			</ul>
-		</div>
+		<ul class="nav-links" id="navLinks">
+			<li><a href="index">Inicio</a></li>
+			<li><a href="nosotros">Nosotros</a></li>
+			<li><a href="servicios">Servicios</a></li>
+			<li><a href="#" class="active">Sucursales</a></li>
+			<li><a href="productos">Productos</a></li>
+		</ul>
 	</nav>
 
-	<section id="home" class="home">
-		<img src="assets/banners/sucursales.png" alt="Grupo Patron Sucursales" class="img-menu img-fluid">
-	</section>
+	<header class="page-header">
+		<img src="assets/banners/sucursales.jpg" alt="Grupo Patrón Sucursales">
+		<div class="page-header-content">
+			<span class="eyebrow">Cobertura en Sinaloa</span>
+			<h1>Sucursales</h1>
+		</div>
+	</header>
 
-	<section id="sucursal" class="g-patron py-5">
-		<div class="row h-100 justify-content-center text-center">
-			<div class="col-10 py-5" data-aos="fade-in">
-				<h1>Sucursales</h1>
-				<center><hr class="mb-5"></center>
-				<p>Disponemos de cobertura en todo el estado de Sinaloa. Visite su centro de acopio más cercano.</p>
+	<section id="sucursal" class="section section-navy">
+		<div class="container text-center" data-reveal>
+			<p class="lede center">Disponemos de cobertura en todo el estado de Sinaloa. Visite su centro de acopio más cercano.</p>
+		</div>
+
+		<div class="container">
+			<div class="grid branch-grid" style="margin-top: 3rem;">
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Guasave</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">60,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6878813007"><i class="fa-solid fa-phone" aria-hidden="true"></i>687 881 3007</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Carreta Guasave los Mochis Kilometro 2.5, Zona Industrial, 81000 Guasave, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=25.5969486,-108.4939117" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Angostura</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">93,000 t</span></div>
+					<a class="branch-contact-row" href="tel:66737325942"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 3732 5942</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>81613 Angostura, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=25.4113931,-108.1093956" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>El Gato</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">63,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6977294098"><i class="fa-solid fa-phone" aria-hidden="true"></i>697 729 4098</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>81545 Leopoldo Sánchez Celis, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=25.1733965,-107.9686561" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Espyga</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">50,000 t</span></div>
+					<a class="branch-contact-row" href="tel:66727274104"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 2727 4104</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Carretera Culiacancito, Manzana Vitaruto km. 14, 80303 Adolfo López Mateos, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.8902028,-107.6472707" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Culiacancito</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">45,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6671980271"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 198 0271</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>80300 Culiacancito, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.8256068,-107.5515721" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Navolato</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">32,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6672150441"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 215 0441</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Km 17.5, Supermanzana Carretera A, 80372 Ejido Convención de Aguascalientes, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.7622034,-107.6355698" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Yebavito</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">80,000 t</span></div>
+					<a class="branch-contact-row" href="tel:66727211169"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 2721 1169</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Puente Navolato, 80370 Yebavito, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.7656843,-107.6092939" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Mezquitillo</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">130,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6671980275"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 198 0275</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Mezquitillo, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.5165236,-107.3318835" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>La Cruz</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">150,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6969616655"><i class="fa-solid fa-phone" aria-hidden="true"></i>696 961 6655</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>82775, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=23.9390498,-106.9250185" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
+				<div class="card branch-card" data-reveal>
+					<div class="branch-card-head">
+						<h3>Oso Viejo</h3>
+					</div>
+					<div class="branch-stat"><span class="stat-label">Capacidad granel</span><span class="stat-value">150,000 t</span></div>
+					<a class="branch-contact-row" href="tel:6671980726"><i class="fa-solid fa-phone" aria-hidden="true"></i>667 198 0726</a>
+					<div class="branch-contact-row branch-address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>80483 Oso Viejo, Sin.</div>
+					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.3944458,-107.176016" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+				</div>
+
 			</div>
 		</div>
-		<div class="row h-100 justify-content-center px-4 px-xxl-0">
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Guasave</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.23974265595!2d-108.4939117!3d25.596948599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba261bce7ddc97%3A0xed08c379cd60c305!2sGranos%20Patr%C3%B3n%20Sucursal%20Guasave!5e0!3m2!1ses!2smx!4v1739832359598!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 60,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>687 881 3007<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>Carreta Guasave los Mochis Kilometro 2.5, Zona Industrial, 81000 Guasave, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Angostura</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.8033280060845!2d-108.1093956!3d25.4113931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bb8700238b3633%3A0x6f184d1c7c8d3562!2sGranos%20Patr%C3%B3n%20Sucursal%20Angostura!5e0!3m2!1ses!2smx!4v1739832386939!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 93,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 3732 5942<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>81613 Angostura, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">El Gato</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.883937692158!2d-107.96865609999999!3d25.1733965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bc83005ae42f5b%3A0x2d2fe151f08ef228!2sGranos%20Patr%C3%B3n%20Sucursal%20Gato%20de%20Lara!5e0!3m2!1ses!2smx!4v1739833567660!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 63,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>697 729 4098<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>81545 Leopoldo Sánchez Celis, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Espyga</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.22801702304!2d-107.6472707!3d24.890202799999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcc10018ce3d79%3A0x3665a0ad093ddec!2sGranos%20Patr%C3%B3n%20Sucursal%20Espyga!5e0!3m2!1ses!2smx!4v1739833642783!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 50,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 2727 4104<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>Carretera Culiacancito, Manzana Vitaruto km. 14, 80303 Adolfo López Mateos, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Culiacancito</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.118910556811!2d-107.5515721!3d24.8256068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcc5c74f451501%3A0x9044e69d8b30e494!2sGranos%20Patr%C3%B3n%20Sucursal%20Culiacancito!5e0!3m2!1ses!2smx!4v1739833607488!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 45,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 198 0271<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>80300 Culiacancito, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Navolato</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.97041761173!2d-107.6355698!3d24.762203400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcc9003ec505c9%3A0xf3a171b74ce435e0!2sGranos%20Patr%C3%B3n%20Sucursal%20Navolato!5e0!3m2!1ses!2smx!4v1739832414789!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 32,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 215 0441<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>Km 17.5, Supermanzana Carretera A, 80372 Ejido Convención de Aguascalientes, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Yebavito</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.8688833949627!2d-107.6092939!3d24.7656843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86bcb790359886b7%3A0x8939f66bb88f4e51!2sGranos%20Patr%C3%B3n%20Sucursal%20Yebavito!5e0!3m2!1ses!2smx!4v1739832275049!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 80,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 2721 1169<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>Puente Navolato, 80370 Yebavito, Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Mezquitillo</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3630.102840474709!2d-107.33188349999999!3d24.5165236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86a329a69f717291%3A0x6924ab03e93cfe3f!2sGranos%20Patr%C3%B3n%20Sucursal%20Mezquitillo!5e0!3m2!1ses!2smx!4v1739832229795!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 130,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 198 0275<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>Mezquitillo</p>
-			</div>
-
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">La Cruz</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.604651255142!2d-106.9250185!3d23.939049799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86a25f6597ba9981%3A0x401018149d0fbbbc!2sGranos%20Patr%C3%B3n%20Sucursal%20La%20Cruz!5e0!3m2!1ses!2smx!4v1739833626605!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 150,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>696 961 6655<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>82775 Sin.</p>
-				
-			</div>
-
-			<div class="col-12 col-xxl-3 p-5 centros" data-aos="fade-in">
-				<h3 class="text-center">Oso Viejo</h3>
-				<div id="map-container mini-map-google-1" class="z-depth-1-half map-container mini-map my-5">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3633.62211296313!2d-107.17601599999999!3d24.394445800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86a2db955b9729c1%3A0xf3059995da6aadbf!2sGranos%20Patr%C3%B3n%20Sucursal%20Oso%20Viejo!5e0!3m2!1ses!2smx!4v1739832325020!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				<p><b><span>CAPACIDAD (Toneladas):</span></b><br><b>Granel:</b> 150,000<br></p>
-				<p><b><span>CONTACTO:</span></b><br><span><i class="fa-solid fa-phone">&nbsp&nbsp</i></span>667 198 0726<br><span><i class="fa-solid fa-location-dot">&nbsp&nbsp</i></span>80483 Oso Viejo, Sin.</p>
-			</div>
-		</div>
 	</section>
 
-	<section id="contacto" class="c-patron py-5">
-		<div class="row h-100 justify-content-center" data-aos="fade-in">
-			<div class="col-12 col-lg-8 py-5 my-auto text-center">
+	<section id="contacto" class="section section-soft contact-band">
+		<div class="container" data-reveal>
+			<div class="text-center" style="margin-bottom: 2.75rem;">
 				<h2>Contáctanos</h2>
-				<center><hr class="mb-4"></center>
-				<a href="tel:6677589000" class="btn  m-xl-4 m-3" aria-label="Hacer una llamada"><i class="fa-solid fa-phone"></i>&nbsp&nbspLlamanos</a>
-				<a href="mailto:info@grupopatron.com.mx" target="_blank" class="btn m-xl-4 m-3" aria-label="Escribir un correo"><i class="fa-solid fa-envelope"></i>&nbsp&nbspEscribenos</a>
-				<p class="my-3 px-5">Nos encontramos en C.P. 80299, Cuarta 3351, Mercado de Abastos, Culiacán Rosales, Sinaloa.</p>
+				<hr class="divider center">
+			</div>
+			<div class="contact-grid">
+				<a class="contact-item" href="tel:6677589000" aria-label="Llamar a Grupo Patrón">
+					<span class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+					<span class="contact-label">Llámanos</span>
+					<span class="contact-value">(667) 758 9000</span>
+				</a>
+				<a class="contact-item" href="mailto:info@grupopatron.com.mx" target="_blank" aria-label="Escribir un correo a Grupo Patrón">
+					<span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+					<span class="contact-label">Escríbenos</span>
+					<span class="contact-value">info@grupopatron.com.mx</span>
+				</a>
+				<a class="contact-item" href="https://www.google.com/maps/dir/?api=1&destination=24.7717533,-107.3650234" target="_blank" rel="noopener" aria-label="Cómo llegar a Grupo Patrón">
+					<span class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+					<span class="contact-label">Visítanos</span>
+					<span class="contact-value">C.P. 80299, Cuarta 3351, Mercado de Abastos, Culiacán Rosales, Sinaloa.</span>
+				</a>
 			</div>
 		</div>
 	</section>
 
-	<section id="footer" class="footer">
-		<div class="row h-100 justify-content-center pt-5">
-			<div class="col-10 pt-5">
-				<img src="assets/logos/logo.png" class="logo-f my-3">
-				<div class="row">
-					<div class="col-lg-12 col-12 py-4 py-lg-3 my-3">
-						<a href="https://www.facebook.com/profile.php?id=100057191331714&locale=es_LA" target="_blank"><i class="fa-brands fa-square-facebook social-icon"></i></a>
-						<a href="https://www.instagram.com/grupopatronmx" target="_blank"><i class="fa-brands fa-square-instagram social-icon"></i></a>
-						<a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHLc5qh7WeXLAAAAZUWfefoF_kM3qWxfdewDmU5LWw14Lfp40LP9SN-j31SE9iq2ljcTpyKYbHBqpBh_LDBOjD-f8k-7Di6FB96XGgU33fcujctddEgXMzcq-unV7l4dcSXe9M=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgrupo-patr%25C3%25B3n%2F" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
-					</div>
-					<div class="col-lg-12 col-12 py-4 py-lg-3">
-						<p>info<span>@</span>grupopatron.com.mx</p>
-						<p>(667) 758 9000</p>
-						<p>C.P. 80299, Cuarta 3351<br>Mercado de Abastos<br>Culiacán Rosales, Sinaloa</p>
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="footer-columns">
+				<div>
+					<img src="assets/logos/logo.png" class="footer-logo" alt="Grupo Patrón">
+					<p class="footer-tagline">Sembrando confianza desde 1989.</p>
+					<div class="social-row">
+						<a href="https://www.facebook.com/profile.php?id=100057191331714&locale=es_LA" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook social-icon"></i></a>
+						<a href="https://www.instagram.com/grupopatronmx" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram social-icon"></i></a>
+						<a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQHLc5qh7WeXLAAAAZUWfefoF_kM3qWxfdewDmU5LWw14Lfp40LP9SN-j31SE9iq2ljcTpyKYbHBqpBh_LDBOjD-f8k-7Di6FB96XGgU33fcujctddEgXMzcq-unV7l4dcSXe9M=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fgrupo-patr%25C3%25B3n%2F" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in social-icon"></i></a>
 					</div>
 				</div>
+				<div>
+					<h3 class="footer-heading">Navegación</h3>
+					<ul class="footer-links">
+						<li><a href="index">Inicio</a></li>
+						<li><a href="nosotros">Nosotros</a></li>
+						<li><a href="servicios">Servicios</a></li>
+						<li><a href="#" class="active">Sucursales</a></li>
+						<li><a href="productos">Productos</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="footer-heading">Contacto</h3>
+					<a class="footer-contact-item" href="tel:6677589000"><i class="fa-solid fa-phone" aria-hidden="true"></i>(667) 758 9000</a>
+					<a class="footer-contact-item" href="mailto:info@grupopatron.com.mx"><i class="fa-solid fa-envelope" aria-hidden="true"></i>info@grupopatron.com.mx</a>
+					<div class="footer-contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>C.P. 80299, Cuarta 3351, Mercado de Abastos, Culiacán Rosales, Sinaloa</div>
+				</div>
 			</div>
-			<div class="col-lg-12 col-8 pt-5">
-				<p class="copy">COPYRIGHT © 2024 GRUPO PATRÓN. TODOS LOS DERECHOS RESERVADOS<br>DISEÑADO POR @RICARDOHDZM</p>
+			<div class="footer-bottom">
+				<span>COPYRIGHT © <span id="year"></span> GRUPO PATRÓN. TODOS LOS DERECHOS RESERVADOS</span>
+				<span>DISEÑADO POR JRHM WEB STUDIO</span>
 			</div>
 		</div>
-	</section>
+	</footer>
 
-	<a href="tel:6677589000"><button id="wappBtn" title="Llamar a Grupo Patrón"><img class="wapp" src="assets/logos/wapp.png"></button></a>
+	<a href="tel:6677589000" aria-label="Llamar a Grupo Patrón"><button id="wappBtn" title="Llamar a Grupo Patrón"><img class="wapp" src="assets/logos/wapp.png" alt=""></button></a>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="/node_modules/jquery/dist/jquery.js"></script>
-
-
-	<script>
-		AOS.init({
-			duration: 1000,
-			delay: 0,
-			easing: 'ease-in-out',
-			once: true,
-		});
-	</script>
-
-	<script>
-		if (history.scrollRestoration) {
-			history.scrollRestoration = 'manual';
-		} else {
-			window.onbeforeunload = function () {
-				window.scrollTo(0, 0);
-			}
-		}
-	</script>
-
+	<script src="js/main.js"></script>
 </body>
 </html>
