@@ -506,7 +506,7 @@ p:last-child{ margin-bottom: 0; }
 }
 
 .hero-logo{
-	width: clamp(280px, 75vw, 680px);
+	width: clamp(280px, 100vw, 680px);
 	height: auto;
 	filter: brightness(0) invert(1);
 	animation: hero-in 1.1s var(--ease) both;
