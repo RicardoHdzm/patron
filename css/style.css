@@ -1202,4 +1202,6 @@ a.branch-contact-row:hover{
 	.hero-logo{ height: 11rem; }
 
 	.page-header{ height: 38vh; min-height: 260px; }
+
+	body{ text-align: justify; }
 }
