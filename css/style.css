@@ -506,8 +506,8 @@ p:last-child{ margin-bottom: 0; }
 }
 
 .hero-logo{
-	height: 17rem;
-	max-width: 85vw;
+	width: clamp(200px, 42vw, 680px);
+	height: auto;
 	filter: brightness(0) invert(1);
 	animation: hero-in 1.1s var(--ease) both;
 }
@@ -1198,8 +1198,6 @@ a.branch-contact-row:hover{
 	:root{ --nav-h: 78px; }
 
 	.section{ padding: 3.5rem 0; }
-
-	.hero-logo{ height: 11rem; }
 
 	.page-header{ height: 38vh; min-height: 260px; }
 
