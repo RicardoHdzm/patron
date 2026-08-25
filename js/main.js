@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	initNavScroll();
 	initScrollReveal();
 	initProductTabs();
+	initBranchSort();
 	initScrollRestore();
 	initYear();
 	initCounters();
@@ -106,6 +107,55 @@ function initProductTabs() {
 	tabs.forEach(function (tab) {
 		tab.addEventListener("click", function () {
 			activate(tab.dataset.tab);
+		});
+	});
+}
+
+// Sort tabs for the branch grid (sucursales.html)
+function initBranchSort() {
+	var tabs = document.querySelectorAll(".sort-tab");
+	var grid = document.querySelector(".branch-grid");
+	if (!tabs.length || !grid) return;
+
+	var defaultOrder = Array.prototype.slice.call(grid.children);
+
+	function applyOrder(cards) {
+		cards.forEach(function (card) { grid.appendChild(card); });
+	}
+
+	function sortBy(key) {
+		var cards = defaultOrder.slice();
+
+		if (key === "alpha") {
+			cards.sort(function (a, b) {
+				return a.dataset.name.localeCompare(b.dataset.name, "es");
+			});
+		} else if (key === "capacity") {
+			cards.sort(function (a, b) {
+				return Number(b.dataset.capacity) - Number(a.dataset.capacity);
+			});
+		}
+
+		applyOrder(cards);
+	}
+
+	tabs.forEach(function (tab) {
+		tab.addEventListener("click", function () {
+			var alreadyActive = tab.classList.contains("active");
+
+			tabs.forEach(function (t) {
+				t.classList.remove("active");
+				t.setAttribute("aria-pressed", "false");
+			});
+
+			if (alreadyActive) {
+				applyOrder(defaultOrder.slice());
+				return;
+			}
+
+			tab.classList.add("active");
+			tab.setAttribute("aria-pressed", "true");
+			sortBy(tab.dataset.sort);
 		});
 	});
 }

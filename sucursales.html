@@ -53,9 +53,15 @@
 		</div>
 
 		<div class="container">
+			<div class="sort-tabs" data-reveal>
+				<span class="sort-label">Ordenar por:</span>
+				<button type="button" class="sort-tab" data-sort="alpha" aria-pressed="false">A-Z</button>
+				<button type="button" class="sort-tab" data-sort="capacity" aria-pressed="false">Capacidad</button>
+			</div>
+
 			<div class="grid branch-grid" style="margin-top: 3rem;">
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Guasave" data-capacity="60000">
 					<div class="branch-card-head">
 						<h3>Guasave</h3>
 					</div>
@@ -65,7 +71,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=25.5969486,-108.4939117" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Angostura" data-capacity="93000">
 					<div class="branch-card-head">
 						<h3>Angostura</h3>
 					</div>
@@ -75,7 +81,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=25.4113931,-108.1093956" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="El Gato" data-capacity="63000">
 					<div class="branch-card-head">
 						<h3>El Gato</h3>
 					</div>
@@ -85,7 +91,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=25.1733965,-107.9686561" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Espyga" data-capacity="50000">
 					<div class="branch-card-head">
 						<h3>Espyga</h3>
 					</div>
@@ -95,7 +101,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.8902028,-107.6472707" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Culiacancito" data-capacity="45000">
 					<div class="branch-card-head">
 						<h3>Culiacancito</h3>
 					</div>
@@ -105,7 +111,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.8256068,-107.5515721" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Navolato" data-capacity="32000">
 					<div class="branch-card-head">
 						<h3>Navolato</h3>
 					</div>
@@ -115,7 +121,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.7622034,-107.6355698" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Yebavito" data-capacity="80000">
 					<div class="branch-card-head">
 						<h3>Yebavito</h3>
 					</div>
@@ -125,7 +131,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.7656843,-107.6092939" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Mezquitillo" data-capacity="130000">
 					<div class="branch-card-head">
 						<h3>Mezquitillo</h3>
 					</div>
@@ -135,7 +141,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=24.5165236,-107.3318835" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="La Cruz" data-capacity="150000">
 					<div class="branch-card-head">
 						<h3>La Cruz</h3>
 					</div>
@@ -145,7 +151,7 @@
 					<a class="branch-directions" href="https://www.google.com/maps/dir/?api=1&destination=23.9390498,-106.9250185" target="_blank" rel="noopener">Cómo llegar <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
 				</div>
 
-				<div class="card branch-card" data-reveal>
+				<div class="card branch-card" data-reveal data-name="Oso Viejo" data-capacity="150000">
 					<div class="branch-card-head">
 						<h3>Oso Viejo</h3>
 					</div>
@@ -221,7 +227,7 @@
 		</div>
 	</footer>
 
-	<a href="tel:6677589000" aria-label="Llamar a Grupo Patrón"><button id="wappBtn" title="Llamar a Grupo Patrón"><img class="wapp" src="assets/logos/wapp.png" alt=""></button></a>
+	<a href="https://wa.me/526677589000" target="_blank" rel="noopener" aria-label="Escribir a Grupo Patrón por WhatsApp"><button id="wappBtn" title="Escribir a Grupo Patrón por WhatsApp"><img class="wapp" src="assets/logos/wapp.png" alt=""></button></a>
 
 	<script src="js/main.js"></script>
 </body>

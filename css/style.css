@@ -137,7 +137,8 @@ p:last-child{ margin-bottom: 0; }
 }
 
 .section-navy{
-	background: var(--navy);
+	background-color: var(--navy);
+	background-image: linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%);
 	color: #fff;
 }
 
@@ -189,6 +190,7 @@ p:last-child{ margin-bottom: 0; }
 
 .section-navy .stats-grid .stat-block-value{
 	color: var(--gold);
+	text-shadow: 0 2px 20px rgba(248, 188, 44, .35);
 }
 
 .section-navy .stats-grid .stat-suffix-plus{
@@ -275,6 +277,7 @@ p:last-child{ margin-bottom: 0; }
 	border-radius: var(--radius-sm);
 	padding: 1rem 1.9rem;
 	cursor: pointer;
+	box-shadow: var(--shadow-sm);
 	transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .25s var(--ease);
 }
 
@@ -288,6 +291,7 @@ p:last-child{ margin-bottom: 0; }
 	background-color: transparent;
 	border-color: #fff;
 	color: #fff !important;
+	box-shadow: none;
 }
 
 .btn.btn-outline:hover{
@@ -612,6 +616,7 @@ p:last-child{ margin-bottom: 0; }
 	border-radius: var(--radius);
 	padding: 2.25rem 1.75rem;
 	text-align: center;
+	box-shadow: 0 1px 0 rgba(255,255,255,.06) inset, 0 18px 30px -18px rgba(0,0,0,.45);
 	transition: transform .3s var(--ease), box-shadow .3s var(--ease), background-color .3s var(--ease);
 }
 
@@ -638,10 +643,17 @@ p:last-child{ margin-bottom: 0; }
 	width: 3.75rem;
 	height: 3.75rem;
 	border-radius: 50%;
-	background: rgba(248, 188, 44, .15);
+	background: radial-gradient(120% 120% at 30% 20%, rgba(248,188,44,.28) 0%, rgba(248,188,44,.12) 60%, rgba(248,188,44,.08) 100%);
+	box-shadow: inset 0 0 0 1px rgba(248,188,44,.25);
 	color: var(--gold);
 	font-size: 1.5rem;
 	margin-bottom: 1.25rem;
+	transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+
+.card:hover .card-icon{
+	transform: scale(1.08) rotate(-4deg);
+	box-shadow: inset 0 0 0 1px rgba(248,188,44,.4), 0 8px 20px rgba(248,188,44,.25);
 }
 
 /* Grid layouts */
@@ -776,7 +788,8 @@ p:last-child{ margin-bottom: 0; }
    ========================================================================== */
 
 .footer{
-	background: var(--navy);
+	background-color: var(--navy);
+	background-image: linear-gradient(180deg, var(--navy) 0%, var(--navy-dark) 100%);
 	color: #fff;
 	padding: 4.5rem 0 0;
 }
@@ -806,12 +819,12 @@ p:last-child{ margin-bottom: 0; }
 
 .social-icon{
 	font-size: 1.9rem;
-	color: #fff;
+	color: var(--gold);
 	transition: color .2s ease, transform .2s ease;
 }
 
 .social-icon:hover{
-	color: var(--gold);
+	color: #fff;
 	transform: translateY(-3px);
 }
 
@@ -906,7 +919,7 @@ a.footer-contact-item:hover{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 50%;
+	border-radius: var(--radius);
 	background-color: var(--navy);
 	border: 3px solid #fff;
 	box-shadow: var(--shadow-md);
@@ -918,7 +931,7 @@ a.footer-contact-item:hover{
 	content: "";
 	position: absolute;
 	inset: 0;
-	border-radius: 50%;
+	border-radius: var(--radius);
 	background: var(--navy);
 	border: 2px solid rgba(255, 255, 255, .8);
 	z-index: -1;
@@ -953,7 +966,7 @@ a.footer-contact-item:hover{
 }
 
 #wappBtn img{
-	width: 2.2rem;
+	width: 2.75rem;
 }
 
 /* ==========================================================================
@@ -969,17 +982,33 @@ a.footer-contact-item:hover{
 }
 
 .brand-grid-item{
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
 	max-width: 15rem;
+	aspect-ratio: 1;
+	padding: 2rem;
+	background: #fff;
+	border: 1px solid rgba(20, 33, 61, .06);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow-sm);
+	transition: transform .3s var(--ease), box-shadow .3s var(--ease);
+}
+
+.brand-grid-item:hover{
+	transform: translateY(-8px);
+	box-shadow: var(--shadow-lg);
 }
 
 .brand-logo{
 	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 /* ==========================================================================
-   Product showcase — brand tabs + grid (productos.html)
+   Product brand filter (productos.html)
    ========================================================================== */
 
 .product-tabs{
@@ -1015,6 +1044,49 @@ a.footer-contact-item:hover{
 	color: var(--navy-darker);
 }
 
+/* ==========================================================================
+   Branch sort control (sucursales.html)
+   ========================================================================== */
+
+.sort-tabs{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
+	margin-top: 2.5rem;
+	margin-bottom: 3rem;
+}
+
+.sort-label{
+	color: rgba(255, 255, 255, .5);
+	font-size: .85rem;
+	font-weight: 600;
+	letter-spacing: .3px;
+}
+
+.sort-tab{
+	padding: .25rem 0;
+	border: 0;
+	border-bottom: 2px solid transparent;
+	background: transparent;
+	color: rgba(255, 255, 255, .6);
+	font-weight: 600;
+	font-size: .85rem;
+	letter-spacing: .3px;
+	cursor: pointer;
+	transition: color .2s ease, border-color .2s ease;
+}
+
+.sort-tab:hover{
+	color: #fff;
+}
+
+.sort-tab.active{
+	color: var(--gold);
+	border-bottom-color: var(--gold);
+}
+
 .product-grid{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -1046,20 +1118,17 @@ a.footer-contact-item:hover{
 
 .product-card-media{
 	width: 100%;
-	max-width: 170px;
+	max-width: 230px;
 	aspect-ratio: 1;
 	margin: 0 auto 1.25rem;
-	border-radius: 50%;
-	background: var(--bg-soft);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	overflow: visible;
 }
 
 .product-card-media img{
-	width: 92%;
-	height: 92%;
+	width: 100%;
+	height: 100%;
 	object-fit: contain;
 }
 
@@ -1200,6 +1269,4 @@ a.branch-contact-row:hover{
 	.section{ padding: 3.5rem 0; }
 
 	.page-header{ height: 38vh; min-height: 260px; }
-
-	body{ text-align: justify; }
 }
